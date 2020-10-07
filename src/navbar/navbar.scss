@@ -1,0 +1,109 @@
+@import "../Theme/variables.scss";
+
+
+.theme-change {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navbar-container {
+    width: 100%;
+    z-index: 3;
+}
+.pulse-dot {
+    position: relative;
+    z-index: 9999;
+    width: 6px;
+    height: 6px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 5px gold;
+}
+
+
+.buildinfo {
+    background-color: $background-color;
+    text-align: center;
+    color: $font-color;
+    padding-top: 5rem;
+    flex: 0 1 auto;
+}
+
+.buildinfo span {
+    border: 1px solid $font-color;
+    box-shadow: 0px 0px 8px $font-color;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar {
+    width: calc(100% - 10rem);
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+}
+
+.navibar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+    width: 100%;
+    list-style: none;
+    position: fixed;
+    top: 1px;
+    background-color: $background-color-fade;
+}
+
+.navlist {
+    display: flex;
+    padding: 0.3rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.navlist > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $icon-color
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sticky {
+    background-color: $background-color-fade;
+    // width: calc(100% - 20rem);
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.theme-switch {
+    cursor: pointer;
+    align-items: center;
+    position: fixed;
+    left: 2rem;
+    top: calc(100% - 3rem);
+    z-index: 2;
+    background-color: $background-color-fade;
+    font-weight: 600;
+}
+
+.theme-switch:hover {
+    opacity: 0.8;
+}
+
+.theme-wand {
+    padding-right: .5rem;
+}

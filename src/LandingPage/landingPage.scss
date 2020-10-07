@@ -1,0 +1,85 @@
+@import '../Theme/variables.scss';
+
+section.landing {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.intro-name {
+    font-family: Reem Kufi, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    padding: 2rem;
+}
+
+.intro-container {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.intro-tags {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.intro-tags .separator {
+    color: #007bff;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-footer {
+    flex: 0 1 60px;
+    padding-bottom: .3rem;
+}
+
+
+.icon-scroll:before {
+    position: absolute;
+}
+
+.icon-scroll {
+  width: 34px;
+  height: 60px;
+  box-shadow: inset 0 0 0 1px $font-color;
+  border-radius: 25px;
+}
+  
+
+.icon-scroll:before {
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  background: $font-color;
+  margin-left: -4px;
+  margin-top: 4px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+  
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    
+  100% {
+    opacity: 0;
+    transform: translateY(30px)
+  }
+    
+}
+  

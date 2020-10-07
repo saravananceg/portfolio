@@ -1,10 +1,19 @@
-.App {
-  text-align: center;
+@import './Theme/variables.scss';
+
+body, html {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  width: calc(100% - 20rem);
+  color: $font-color;
+  padding-top: 30px;
+  min-height: 100vh;
+}
+
+h1.title {
+  font-weight: 800;
+  font-size: 3rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +23,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $background-color;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $font-color;
 }
 
 .App-link {

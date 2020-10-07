@@ -6,9 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.2",
+    "eslint-config-airbnb": "^18.2.0",
+    "jquery": "^3.5.1",
+    "lottie-web": "^5.7.3",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-lottie": "^1.2.3",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +29,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",

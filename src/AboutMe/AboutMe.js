@@ -25,7 +25,7 @@ const AboutMe = () => (
           <p>
             Will prefer
             {' '}
-            <b>Quality over Quantity of work</b>
+            <b className="highlight">Quality over Quantity of work</b>
             {' '}
             anytime.
           </p>

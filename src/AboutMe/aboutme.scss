@@ -30,7 +30,10 @@
     justify-content: center;
 }
 
-
+.about-me-desc p > .highlight {
+    padding: 3px;
+    background-color: var(--portfolio-font-fade-color);
+}
 .about-me .icon-scroll:before {
   margin-left: 13px;
 }

@@ -23,16 +23,6 @@ const secMap = {
   skills: 60
 };
 
-const colors = [
-  'cyan',
-  'green',
-  'red',
-  'green',
-  'yellow',
-  'orange',
-  'white'
-];
-
 const Navbar = () => {
   const [pulsePos, setPulsePos] = useState();
 
@@ -52,9 +42,11 @@ const Navbar = () => {
   useEffect(() => {
     const data = ThemeData[currentTheme];
     const { style } = document.documentElement;
+    
     style.setProperty('--portfolio-bg-color', data.bg);
-    style.setProperty('--portfolio-bg-fade-color', data.bgFade);
+    style.setProperty('--portfolio-bg-fade-color', `${data.bg}bf`);
     style.setProperty('--portfolio-font-color', data.font);
+    style.setProperty('--portfolio-font-fade-color', `${data.font}40`);
     style.setProperty('--portfolio-icon-color', data.icon);
   }, [currentTheme]);
   useEffect(() => {

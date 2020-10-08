@@ -10,6 +10,7 @@
 
 # production
 /build
+/saravanan
 
 # misc
 .DS_Store

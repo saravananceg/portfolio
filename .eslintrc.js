@@ -1,4 +1,9 @@
 module.exports = {
+    env: {
+        browser: true,
+        es6: true,
+        node: false
+    },
     "extends": ["airbnb", "airbnb/hooks"],
     "rules": {
         "react/jsx-filename-extension": 0,

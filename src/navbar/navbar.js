@@ -2,7 +2,6 @@ import React, {
   useEffect, useState, useRef, useCallback
 } from 'react';
 import './navbar.scss';
-import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import { ReactComponent as WandIcon } from '../images/magic_wand.svg';
 import { ReactComponent as AboutMeIcon } from '../images/navigation/aboutme.svg';
@@ -10,30 +9,12 @@ import { ReactComponent as SkillsIcon } from '../images/navigation/tools.svg';
 import { ReactComponent as HeartIcon } from '../images/navigation/heart.svg';
 import ThemeData from './test';
 
-const PulseDot = styled.div`
-    will-change: opacity, transform;
-    opacity: 1;
-    transform-style: preserve-3d;
-`;
-
-const topValue = 119;
-const secMap = {
-  landing: 20,
-  about: 40,
-  skills: 60
-};
-
 const Navbar = () => {
-  const [pulsePos, setPulsePos] = useState();
-
   const currentTab = useSelector((state) => state.selectedId);
 
   const navBarItem = useRef(null);
 
   const [currentTheme, setCurrentTheme] = useState(0);
-
-  let transform = 'scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)';
-  transform = `translate3d(${pulsePos}vw, 0px, 0px)`;
 
   const handleThemeSwitch = useCallback(() => {
     setCurrentTheme((val) => ((val + 1) % ThemeData.length));
@@ -42,7 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     const data = ThemeData[currentTheme];
     const { style } = document.documentElement;
-    
+
     style.setProperty('--portfolio-bg-color', data.bg);
     style.setProperty('--portfolio-bg-fade-color', `${data.bg}bf`);
     style.setProperty('--portfolio-font-color', data.font);
@@ -54,7 +35,6 @@ const Navbar = () => {
       entries.forEach((entry) => {
         const id = entry.target.getAttribute('id');
         if (entry.intersectionRatio > 0) {
-          setPulsePos(secMap[id] + entry.intersectionRatio);
           document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
         } else {
           document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
@@ -66,31 +46,6 @@ const Navbar = () => {
     document.querySelectorAll('section[id]').forEach((section) => {
       observer.observe(section);
     });
-
-    const sticky = navBarItem.current.offsetTop;
-
-    // const onScrollEvent = (ev) => {
-    //   if (window.pageYOffset >= sticky) {
-    //     navBarItem.current.classList.add('sticky');
-    //   } else {
-    //     navBarItem.current.classList.remove('sticky');
-    //   }
-
-    //   const scrollTop = window.scrollY;
-    //   const aa = [];
-    //   document.querySelectorAll('section').forEach((a) => {
-    //     aa.push(a.offsetHeight);
-    //   });
-    //   const { scrollHeight } = document.body;
-    //   console.log(window.scrollY);
-    //   const pos = Math.floor((window.scrollY / scrollHeight) * 100);
-    //   setPulsePos(pos);
-    // };
-
-    // window.addEventListener('scroll', onScrollEvent);
-    return () => {
-      // window.removeEventListener('scroll', onScrollEvent);
-    };
   }, []);
 
   return (

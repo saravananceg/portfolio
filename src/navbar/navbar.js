@@ -71,12 +71,12 @@ const Navbar = () => {
           </div>
           <a className="nav-link" href="#works">Works</a>
         </li>
-        {/* <li className={`navlist${currentTab === 'skills' ? ' active' : ''}`}>
+        <li className={`navlist${currentTab === 'skills' ? ' active' : ''}`}>
           <div>
             <SkillsIcon />
           </div>
           <a className="nav-link" href="#skills">Skills</a>
-        </li> */}
+        </li>
       </ul>
       <div className="theme-switch" onClick={handleThemeSwitch}>
         <span className="theme-wand">

@@ -3,7 +3,7 @@ import Lottie from 'react-lottie';
 import { Navbar } from '../navbar/navbar';
 import lottieData from '../lottie-json/hello-boy.json';
 import { Icon } from '../SocialNetworkingList/Icons';
-import { TypeWriteComponent } from '../Components/TypeWriterComponent';
+import TypeWriteComponent from '../Components/TypeWriterComponent';
 import { NextPage } from '../Components/NextPageIcon';
 import ReactLogo from '../react.gif';
 import './landingPage.scss';

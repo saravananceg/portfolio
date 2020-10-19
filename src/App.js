@@ -9,7 +9,7 @@ import { ParallaxStar } from './BackgroundStars/stars';
 import { LandingPage } from './LandingPage/LandingPage';
 import { AboutMe } from './AboutMe/AboutMe';
 import { Works } from './Experience/Experience';
-// import { Skills } from './Skills/Skills';
+import { Skills } from './Skills/Skills';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <LandingPage />
       <AboutMe />
       <Works />
-      {/* <Skills /> */}
+      <Skills />
     </>
   );
 }

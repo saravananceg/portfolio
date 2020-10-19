@@ -1,0 +1,76 @@
+@import '../Theme/variables.scss';
+
+.language-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.language-wrapper {
+  display: flex;
+  width: 15%;
+  flex-flow: column;
+}
+
+.language-desc {
+  text-align: center; 
+}
+
+.language-title {
+  font-weight: 600;
+}
+
+.language-fluency {
+  padding-top: .5rem;
+}
+
+.language-desc-sep {
+    display: inline-block;
+    width: 12px;
+    border-bottom: 2px solid $icon-color;
+}
+
+.single-chart {
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: $font-color;
+  stroke-width: 1;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
+.circle-anim {
+    animation: progress 2s ease-out forwards;
+}
+
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: $icon-color;
+}
+
+.percentage {
+  fill: $font-color;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}

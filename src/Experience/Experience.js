@@ -246,9 +246,9 @@ const Works = () => {
             </WorkItem>
           </div>
         </div>
-        {/* <div className="intro-footer">
+        <div className="intro-footer">
           <div className="icon-scroll" />
-        </div> */}
+        </div>
       </PortfolioContext.Provider>
     </section>
   );

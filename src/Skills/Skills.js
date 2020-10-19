@@ -5,6 +5,7 @@ import PercentBar from './PercentageBar';
 import { ReactComponent as JSIcon } from '../images/html_code.svg';
 import { ReactComponent as BugIcon } from '../images/bug.svg';
 import { ReactComponent as FrontEndIcon } from '../images/monitor.svg';
+import { ReactComponent as BackEndIcon } from '../images/backend.svg';
 
 const Title = ({ children }) => (<h5 className="skills-list-header">{children}</h5>);
 
@@ -43,7 +44,9 @@ const SkillsSection = () => (
               <Content>
                 <div>ES6</div>
                 <div>ReactJS</div>
-                <div>lsadjflkasjdfla</div>
+                <div>Redux</div>
+                <div>BackboneJS</div>
+                <div>Jquery</div>
               </Content>
             </ContentSection>
           </Skill>
@@ -103,7 +106,7 @@ const SkillsSection = () => (
           </Skill>
           <Skill>
             <IconSection>
-              <JSIcon />
+              <BackEndIcon />
             </IconSection>
             <ContentSection>
               <Title>BackEnd</Title>

@@ -1,4 +1,11 @@
 const data = [
+
+  {
+    bg: '#040a22', // dark blue
+    bgFade: '#002e4fbf',
+    font: '#e3e6f1',
+    icon: '#00bfc8'
+  },
   {
     bg: '#5d1fc3', // violet bg
     bgFade: '#5d1fc3bf',
@@ -6,17 +13,12 @@ const data = [
     icon: '#fb5e2f'
   },
   {
-    bg: '#f17a7a', // pink bg
-    bgFade: '#f17a7abf',
-    font: '#1c3a1b',
-    icon: '#1656fc'
-  },
-  {
-    bg: '#7ae2f4', // light blue
-    bgFade: '#7ae2f4bf',
-    font: '#1d221d',
-    icon: '#5766ff'
+    bg: '#042132', // blue
+    bgFade: '#042132bf',
+    font: '#098dff',
+    icon: '#2ed8ff'
   }
+
 ];
 
 export default data;

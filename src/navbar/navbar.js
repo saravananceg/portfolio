@@ -25,7 +25,7 @@ const Navbar = () => {
     const { style } = document.documentElement;
 
     style.setProperty('--portfolio-bg-color', data.bg);
-    style.setProperty('--portfolio-bg-fade-color', `${data.bg}bf`);
+    style.setProperty('--portfolio-bg-fade-color', `${data.bg}f0`);
     style.setProperty('--portfolio-font-color', data.font);
     style.setProperty('--portfolio-font-fade-color', `${data.font}40`);
     style.setProperty('--portfolio-icon-color', data.icon);

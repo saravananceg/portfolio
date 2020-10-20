@@ -1,0 +1,74 @@
+@import '../base/variables.scss';
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em
+}
+
+.social-media-container a {
+    padding: 0 .625rem;
+    color: $icon-color;
+}
+
+.social-media-container {
+    font-size: 3rem;
+}
+
+.social-media-container a:hover {
+    -webkit-animation-name: icon-wobble;
+    animation-name: icon-wobble;
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+@-webkit-keyframes icon-wobble {
+    25% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    75% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes icon-wobble {
+    25% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    75% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}

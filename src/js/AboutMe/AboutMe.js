@@ -37,4 +37,4 @@ const AboutMe = () => (
   </section>
 );
 
-export { AboutMe };
+export default AboutMe;

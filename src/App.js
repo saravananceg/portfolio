@@ -7,9 +7,9 @@ import 'bootstrap';
 
 import ParallaxStar from './js/BackgroundStars/stars';
 import LandingPage from './js/LandingPage/LandingPage';
-import { AboutMe } from './js/AboutMe/AboutMe';
+import AboutMe from './js/AboutMe/AboutMe';
 import Works from './js/Experience/Experience';
-import { Skills } from './js/Skills/Skills';
+import Skills from './js/Skills/Skills';
 
 function App() {
   return (

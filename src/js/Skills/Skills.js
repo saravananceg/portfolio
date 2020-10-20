@@ -154,4 +154,4 @@ const SkillsSection = () => (
   </section>
 );
 
-export { SkillsSection as Skills };
+export default SkillsSection;

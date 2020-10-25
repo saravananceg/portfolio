@@ -17,7 +17,7 @@
 
 .skill-section {
     display: flex;
-    padding: 1rem .25rem;
+    padding: 1rem .25rem .25rem 3rem;
     min-width: 33.3333%;
     justify-content: flex-start;
 }
@@ -44,10 +44,19 @@
 @media (max-width: #{$phone}) {
     .skill-section {
         width: 50%;
+        padding: 1rem .25rem;
     }
 
     .skills-list-header {
         font-size: 1rem;
         font-weight: 700;
     }
+    
+}
+
+@media (max-width: 800px) {
+    .skill-section {
+        padding: 1rem .25rem;
+    }
+
 }

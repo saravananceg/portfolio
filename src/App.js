@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './scss/base/default.scss';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -13,13 +13,13 @@ import Skills from './js/Skills/Skills';
 
 function App() {
   return (
-    <>
+    <Router>
       <ParallaxStar />
       <LandingPage />
       <AboutMe />
       <Works />
       <Skills />
-    </>
+    </Router>
   );
 }
 

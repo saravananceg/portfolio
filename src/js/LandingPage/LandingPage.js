@@ -18,7 +18,7 @@ const data = [
 
 const LandingPage = () => (
   <>
-    <section id="landing" className="container-md section landing">
+    <section id="home" className="container-md section landing">
       <Navbar />
       <div className="buildinfo">
         <span>

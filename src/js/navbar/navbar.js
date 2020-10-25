@@ -1,8 +1,11 @@
 import React, {
   useEffect, useState, useRef, useCallback
 } from 'react';
-import '../../scss/landingPage/navbar.scss';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import ScrollLink from './ScrollLink';
+import '../../scss/landingPage/navbar.scss';
+
 import { ReactComponent as WandIcon } from '../../images/magic_wand.svg';
 import { ReactComponent as AboutMeIcon } from '../../images/navigation/aboutme.svg';
 import { ReactComponent as SkillsIcon } from '../../images/navigation/tools.svg';
@@ -31,65 +34,48 @@ const Navbar = () => {
     style.setProperty('--portfolio-font-fade-color', `${data.font}40`);
     style.setProperty('--portfolio-icon-color', data.icon);
   }, [currentTheme]);
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const id = entry.target.getAttribute('id');
-        if (entry.intersectionRatio > 0) {
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-        } else {
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-        }
-      });
-    }, { threshold: 0.5 });
-
-    // Track all sections that have an `id` applied
-    document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section);
-    });
-  }, []);
 
   return (
     <nav className="navbar-container" ref={navBarItem}>
       <ul className="navibar nav-fill">
-        <li className={`navlist${currentTab === 'landing' ? ' active' : ''}`}>
-
-          <a className="nav-link" href="#landing">
+        <li className="navlist">
+          <ScrollLink smooth className="nav-link" to="home">
             <div className="nav-icon">
               <HeartIcon />
             </div>
             <span>Profile</span>
-          </a>
+          </ScrollLink>
           {/* <PulseDot style={{ transform }} className="pulse-dot" /> */}
         </li>
-        <li className={`navlist${currentTab === 'about' ? ' active' : ''}`}>
-
-          <a className="nav-link" href="#about">
+        <li className="navlist">
+          <ScrollLink smooth className="nav-link" to="about">
             <div className="nav-icon">
               <AboutMeIcon />
             </div>
             <span>About</span>
-          </a>
+          </ScrollLink>
         </li>
-        <li className={`navlist${currentTab === 'works' ? ' active' : ''}`}>
-          <a className="nav-link" href="#works">
+
+        <li className="navlist">
+          <ScrollLink smooth className="nav-link" to="works">
             <div className="nav-icon">
               <WorkIcon />
             </div>
             <span>Works</span>
-          </a>
+          </ScrollLink>
         </li>
-        <li className={`navlist${currentTab === 'skills' ? ' active' : ''}`}>
 
-          <a className="nav-link" href="#skills">
+        <li className="navlist">
+          <ScrollLink smooth className="nav-link" to="skills">
             <div className="nav-icon">
               <SkillsIcon />
             </div>
             <span>Skills</span>
-          </a>
+          </ScrollLink>
         </li>
       </ul>
-      <div className="theme-switch" onClick={handleThemeSwitch}>
+
+      <div role="button" className="theme-switch" onClick={handleThemeSwitch}>
         <span className="theme-wand">
           <WandIcon />
         </span>

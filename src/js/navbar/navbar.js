@@ -1,8 +1,6 @@
 import React, {
   useEffect, useState, useRef, useCallback
 } from 'react';
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import ScrollLink from './ScrollLink';
 import '../../scss/landingPage/navbar.scss';
 
@@ -14,8 +12,6 @@ import { ReactComponent as WorkIcon } from '../../images/navigation/suitcase.svg
 import ThemeData from './MagicThemeData';
 
 const Navbar = () => {
-  const currentTab = useSelector((state) => state.selectedId);
-
   const navBarItem = useRef(null);
 
   const [currentTheme, setCurrentTheme] = useState(0);
@@ -27,7 +23,6 @@ const Navbar = () => {
   useEffect(() => {
     const data = ThemeData[currentTheme];
     const { style } = document.documentElement;
-
     style.setProperty('--portfolio-bg-color', data.bg);
     style.setProperty('--portfolio-bg-fade-color', `${data.bg}f0`);
     style.setProperty('--portfolio-font-color', data.font);
@@ -45,7 +40,6 @@ const Navbar = () => {
             </div>
             <span>Profile</span>
           </ScrollLink>
-          {/* <PulseDot style={{ transform }} className="pulse-dot" /> */}
         </li>
         <li className="navlist">
           <ScrollLink smooth className="nav-link" to="about">
@@ -79,7 +73,7 @@ const Navbar = () => {
         <span className="theme-wand">
           <WandIcon />
         </span>
-        <span>Do Magic</span>
+        <span className="theme-wand-text">Do Magic</span>
       </div>
     </nav>
   );

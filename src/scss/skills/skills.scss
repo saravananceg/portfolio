@@ -17,14 +17,13 @@
 
 .skill-section {
     display: flex;
-    padding: 1rem 2rem;
-    width: 33.3333%;
+    padding: 1rem .25rem;
+    min-width: 33.3333%;
     justify-content: flex-start;
 }
 
 .skill-section-icon {
-    padding-right: 4%;
-    padding-left: 15%;
+    padding-right: 1em;
 }
 
 .skill-icon {
@@ -45,5 +44,10 @@
 @media (max-width: #{$phone}) {
     .skill-section {
         width: 50%;
+    }
+
+    .skills-list-header {
+        font-size: 1rem;
+        font-weight: 700;
     }
 }

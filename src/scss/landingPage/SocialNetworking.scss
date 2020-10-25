@@ -72,3 +72,9 @@
         transform: translateY(0px);
     }
 }
+
+@media (max-width: #{$phone}) {
+    .social-media-container {
+        font-size: 1.5rem;
+    }
+}

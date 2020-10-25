@@ -81,3 +81,17 @@ section.landing {
     }
 
 }
+
+@media (max-width: #{$phone}) {
+    .intro-name {
+        font-size: 2rem;
+    }
+
+    .intro-tags {
+        font-size: 1.25rem;
+    }
+
+    .intro-works h1 {
+        font-size: 1.25rem;
+    }
+}

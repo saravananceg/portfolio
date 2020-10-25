@@ -53,30 +53,40 @@ const Navbar = () => {
     <nav className="navbar-container" ref={navBarItem}>
       <ul className="navibar nav-fill">
         <li className={`navlist${currentTab === 'landing' ? ' active' : ''}`}>
-          <div>
-            <HeartIcon />
-          </div>
 
-          <a className="nav-link" href="#landing">Profile</a>
+          <a className="nav-link" href="#landing">
+            <div className="nav-icon">
+              <HeartIcon />
+            </div>
+            <span>Profile</span>
+          </a>
           {/* <PulseDot style={{ transform }} className="pulse-dot" /> */}
         </li>
         <li className={`navlist${currentTab === 'about' ? ' active' : ''}`}>
-          <div>
-            <AboutMeIcon />
-          </div>
-          <a className="nav-link" href="#about">About</a>
+
+          <a className="nav-link" href="#about">
+            <div className="nav-icon">
+              <AboutMeIcon />
+            </div>
+            <span>About</span>
+          </a>
         </li>
         <li className={`navlist${currentTab === 'works' ? ' active' : ''}`}>
-          <div>
-            <WorkIcon />
-          </div>
-          <a className="nav-link" href="#works">Works</a>
+          <a className="nav-link" href="#works">
+            <div className="nav-icon">
+              <WorkIcon />
+            </div>
+            <span>Works</span>
+          </a>
         </li>
         <li className={`navlist${currentTab === 'skills' ? ' active' : ''}`}>
-          <div>
-            <SkillsIcon />
-          </div>
-          <a className="nav-link" href="#skills">Skills</a>
+
+          <a className="nav-link" href="#skills">
+            <div className="nav-icon">
+              <SkillsIcon />
+            </div>
+            <span>Skills</span>
+          </a>
         </li>
       </ul>
       <div className="theme-switch" onClick={handleThemeSwitch}>

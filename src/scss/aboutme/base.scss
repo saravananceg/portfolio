@@ -1,3 +1,5 @@
+@import "../base/variables.scss";
+
 .about-me {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,7 @@
     display: flex;
     align-items: center;
 }
+
 .about-me-desc {
     display: flex;
     flex-direction: column;
@@ -46,4 +49,17 @@
 
 .about-me .icon-scroll:before {
     margin-left: 13px;
+}
+
+
+@media (max-width: #{$phone}) {
+    .about-me-desc-wrapper {
+        flex-direction: column;
+    }
+
+    .about-me-desc,
+    .about-me-anim {
+        width: 95%
+    }
+
 }

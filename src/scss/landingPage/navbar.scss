@@ -60,7 +60,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $icon-color
+    color: $icon-color;
+    font-size: 1.25rem;
 }
 
 .navbar-container {
@@ -76,7 +77,15 @@
 
 .nav-link {
     font-size: 1.5rem;
-    color: var(--portfolio-font-color);
+    display: flex;
+    color: $font-color;
+    align-items: center;
+}
+
+.nav-icon {
+    color: $icon-color;
+    font-size: .75em;
+    padding-right: .5em;
 }
 
 .theme-switch {
@@ -98,3 +107,15 @@
     padding-right: .5rem;
     color: var(--portfolio-icon-color);
 }
+
+
+@media (max-width: #{$phone}) {
+    .buildinfo {
+        display: none;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+}
+

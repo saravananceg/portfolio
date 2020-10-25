@@ -10,17 +10,26 @@
     padding-bottom: 1rem;
 }
 
+.about-me-desc-wrapper {
+    display: flex;
+    align-items: center;
+}
 .about-me-desc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 1.2rem;
+    width: 60%;
 }
 
 .about-me-desc p {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-weight: 500;
+}
+
+.about-me-anim {
+    width: 40%
 }
 
 .about-content-container {

@@ -11,9 +11,9 @@
     @return unquote($value)
 }
 
-$shadows-small: multiple-box-shadow(500);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big: multiple-box-shadow(100);
+$shadows-small: multiple-box-shadow(400);
+$shadows-medium: multiple-box-shadow(100);
+$shadows-big: multiple-box-shadow(40);
 
 .stars {
     background-color: $background-color;
@@ -26,8 +26,8 @@ $shadows-big: multiple-box-shadow(100);
     width: 1px;
     height: 1px;
     box-shadow: $shadows-small;
-    -webkit-animation: star-anim 50s linear infinite;
-    animation: star-anim 50s linear infinite;
+    -webkit-animation: star-anim 70s linear infinite;
+    animation: star-anim 70s linear infinite;
 
     &:after {
         position: absolute;
@@ -46,8 +46,8 @@ $shadows-big: multiple-box-shadow(100);
     background: transparent;
     border-radius: 50%;
     box-shadow: $shadows-medium;
-    -webkit-animation: star-anim 100s linear infinite;
-    animation: star-anim 100s linear infinite;
+    -webkit-animation: star-anim 120s linear infinite;
+    animation: star-anim 120s linear infinite;
 
     &:after {
         position: absolute;
@@ -63,8 +63,8 @@ $shadows-big: multiple-box-shadow(100);
     width: 3px;
     height: 3px;
     box-shadow: $shadows-big;
-    -webkit-animation: star-anim 150s linear infinite;
-    animation: star-anim 150s linear infinite;
+    -webkit-animation: star-anim 160s linear infinite;
+    animation: star-anim 160s linear infinite;
     background: transparent;
     border-radius: 50%;
 

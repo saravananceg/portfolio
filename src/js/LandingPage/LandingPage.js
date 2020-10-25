@@ -1,8 +1,11 @@
 import React from 'react';
+
 import { Navbar } from '../navbar/navbar';
 import { Icon } from '../SocialNetworkingList/Icons';
+import { ReactComponent as Coder } from '../../images/characters/coder.svg';
 import TypeWriteComponent from '../Components/TypeWriterComponent';
 import '../../scss/landingPage/landingPage.scss';
+
 
 const data = [
   "(() => 'awesome js')()",
@@ -25,6 +28,9 @@ const LandingPage = () => (
 
       <div className="intro-container">
         <div className="intro-section">
+          {/* <div>
+            <Coder width="300" height="200" />
+          </div> */}
           <div className="intro-name">Hello, I&apos;m Saravanan!</div>
           <div className="intro-tags">
             Web Developer
@@ -40,13 +46,6 @@ const LandingPage = () => (
           <div className="intro-works"><TypeWriteComponent data={data} /></div>
           <div className="social-media-container">
             <Icon />
-          </div>
-          <div>
-            {/* <Lottie
-              options={defaultOptions}
-                height={400}
-                width={400}
-      /> */}
           </div>
         </div>
       </div>

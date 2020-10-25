@@ -7,6 +7,7 @@ import { ReactComponent as WandIcon } from '../../images/magic_wand.svg';
 import { ReactComponent as AboutMeIcon } from '../../images/navigation/aboutme.svg';
 import { ReactComponent as SkillsIcon } from '../../images/navigation/tools.svg';
 import { ReactComponent as HeartIcon } from '../../images/navigation/heart.svg';
+import { ReactComponent as WorkIcon } from '../../images/navigation/suitcase.svg';
 import ThemeData from './MagicThemeData';
 
 const Navbar = () => {
@@ -67,7 +68,7 @@ const Navbar = () => {
         </li>
         <li className={`navlist${currentTab === 'works' ? ' active' : ''}`}>
           <div>
-            <SkillsIcon />
+            <WorkIcon />
           </div>
           <a className="nav-link" href="#works">Works</a>
         </li>

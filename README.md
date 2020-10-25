@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Portfolio
 
-This is personal portfolio website.  [Portfolio site[(http://thecoderwiz.com/saravanan).  
+This is personal portfolio website.  [Portfolio site](http://thecoderwiz.com/saravanan).  
 
 If any one needs to reuse feel free to fork and use. Remember to put a star :) 
 

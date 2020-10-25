@@ -143,3 +143,9 @@
     height: 2rem;
     color: $icon-color;
 }
+
+@media (max-width: #{$phone}) {
+    .expand-card {
+        transform: scale(1.25) rotateY(180deg);
+    }
+}

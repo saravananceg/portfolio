@@ -40,3 +40,10 @@
 .skills-list-body > div {
     padding-bottom: .25rem;
 }
+
+
+@media (max-width: #{$phone}) {
+    .skill-section {
+        width: 50%;
+    }
+}

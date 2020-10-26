@@ -54,9 +54,16 @@
 
 @media (max-width: #{$phone}) {
     .about-me-desc-wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
+    .about-me-desc {
+        font-size: 1rem;
+    }
+
+    .about-me-anim {
+        padding-top: -6rem;
+    }
     .about-me-desc,
     .about-me-anim {
         width: 95%

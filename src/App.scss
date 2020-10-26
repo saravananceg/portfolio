@@ -31,15 +31,18 @@ h1.title {
   color: $font-color;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: #{$phone}) {
+  h1.title {
+    font-weight: 700;
+    font-size: 2rem;
   }
 }

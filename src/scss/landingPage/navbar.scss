@@ -76,7 +76,7 @@
 }
 
 .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: flex;
     color: $font-color;
     align-items: center;
@@ -94,8 +94,9 @@
 
 .nav-icon {
     color: $icon-color;
-    font-size: .75em;
+    font-size: 1em;
     padding-right: .5em;
+    display: flex;
 }
 
 .theme-switch {

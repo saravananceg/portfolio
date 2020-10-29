@@ -2,11 +2,14 @@ import React from 'react';
 
 import '../../scss/skills/skills.scss';
 
+import {
+  DiJsBadge, DiDatabase
+} from 'react-icons/di';
+import {
+  AiFillCode, AiFillBug, AiFillGitlab, AiFillHtml5
+} from 'react-icons/ai';
+
 import PercentBar from './PercentageBar';
-import { ReactComponent as JSIcon } from '../../images/html_code.svg';
-import { ReactComponent as BugIcon } from '../../images/bug.svg';
-import { ReactComponent as FrontEndIcon } from '../../images/monitor.svg';
-import { ReactComponent as BackEndIcon } from '../../images/backend.svg';
 
 const Title = ({ children }) => (<h5 className="skills-list-header">{children}</h5>);
 
@@ -38,7 +41,7 @@ const SkillsSection = () => (
         <div className="skills-section-container">
           <Skill>
             <IconSection>
-              <JSIcon />
+              <DiJsBadge className="skill-icon" />
             </IconSection>
             <ContentSection>
               <Title>Javascript</Title>
@@ -53,7 +56,7 @@ const SkillsSection = () => (
           </Skill>
           <Skill>
             <IconSection>
-              <FrontEndIcon />
+              <AiFillHtml5 className="skill-icon" />
             </IconSection>
             <ContentSection>
               <Title>Front-End</Title>
@@ -66,7 +69,7 @@ const SkillsSection = () => (
           </Skill>
           <Skill>
             <IconSection>
-              <BugIcon />
+              <AiFillBug className="skill-icon" />
             </IconSection>
             <ContentSection>
               <Title>Testing</Title>
@@ -79,7 +82,7 @@ const SkillsSection = () => (
           </Skill>
           <Skill>
             <IconSection>
-              <JSIcon />
+              <AiFillCode className="skill-icon" />
             </IconSection>
             <ContentSection>
               <Title>Build Tools</Title>
@@ -94,7 +97,7 @@ const SkillsSection = () => (
           </Skill>
           <Skill>
             <IconSection>
-              <JSIcon />
+              <AiFillGitlab className="skill-icon" />
             </IconSection>
             <ContentSection>
               <Title>Setups</Title>
@@ -107,7 +110,7 @@ const SkillsSection = () => (
           </Skill>
           <Skill>
             <IconSection>
-              <BackEndIcon />
+              <DiDatabase className="skill-icon" />
             </IconSection>
             <ContentSection>
               <Title>BackEnd</Title>

@@ -1,13 +1,12 @@
 import React, {
   useEffect, useState, useRef, useCallback
 } from 'react';
+import { AiFillHome } from 'react-icons/ai';
+import { BsFillPersonFill, BsTools } from 'react-icons/bs';
 import ScrollLink from './ScrollLink';
 import '../../scss/landingPage/navbar.scss';
 
 import { ReactComponent as WandIcon } from '../../images/magic_wand.svg';
-import { ReactComponent as AboutMeIcon } from '../../images/navigation/aboutme.svg';
-import { ReactComponent as SkillsIcon } from '../../images/navigation/tools.svg';
-import { ReactComponent as HeartIcon } from '../../images/navigation/heart.svg';
 import { ReactComponent as WorkIcon } from '../../images/navigation/suitcase.svg';
 import ThemeData from './MagicThemeData';
 
@@ -36,7 +35,7 @@ const Navbar = () => {
         <li className="navlist">
           <ScrollLink smooth className="nav-link" to="home">
             <div className="nav-icon">
-              <HeartIcon />
+              <AiFillHome />
             </div>
             <span>Profile</span>
           </ScrollLink>
@@ -44,7 +43,7 @@ const Navbar = () => {
         <li className="navlist">
           <ScrollLink smooth className="nav-link" to="about">
             <div className="nav-icon">
-              <AboutMeIcon />
+              <BsFillPersonFill />
             </div>
             <span>About</span>
           </ScrollLink>
@@ -62,7 +61,7 @@ const Navbar = () => {
         <li className="navlist">
           <ScrollLink smooth className="nav-link" to="skills">
             <div className="nav-icon">
-              <SkillsIcon />
+              <BsTools />
             </div>
             <span>Skills</span>
           </ScrollLink>

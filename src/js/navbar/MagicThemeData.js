@@ -14,7 +14,7 @@ const data = [
   {
     bg: '#042132', // blue
     bgFade: '#042132bf',
-    font: '#098dff',
+    font: '#e4f2ff',
     icon: '#2ed8ff'
   }
 

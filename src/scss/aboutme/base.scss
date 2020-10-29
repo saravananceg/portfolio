@@ -47,11 +47,6 @@
     background-color: var(--portfolio-font-fade-color);
 }
 
-.about-me .icon-scroll:before {
-    margin-left: 13px;
-}
-
-
 @media (max-width: #{$phone}) {
     .about-me-desc-wrapper {
         flex-direction: column-reverse;

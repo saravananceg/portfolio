@@ -91,7 +91,6 @@ const SkillsSection = () => (
                 <div>Gulp / Grunt</div>
                 <div>Babel</div>
                 <div>Eslint</div>
-                <div>Lerna</div>
               </Content>
             </ContentSection>
           </Skill>
@@ -105,6 +104,7 @@ const SkillsSection = () => (
                 <div>Git</div>
                 <div>CI/CD</div>
                 <div>npm registry</div>
+                <div>Lerna</div>
               </Content>
             </ContentSection>
           </Skill>
@@ -115,6 +115,7 @@ const SkillsSection = () => (
             <ContentSection>
               <Title>BackEnd</Title>
               <Content>
+                <div>NodeJS</div>
                 <div>Java</div>
                 <div>Struts2</div>
               </Content>
